@@ -17,6 +17,9 @@
   box-sizing: border-box;
   font-family: verdana; }
 
+body.in-transition {
+  transition: transform 10s ease; }
+
 header {
   height: 50px;
   width: 100%;
@@ -33,22 +36,54 @@ header > ul > li {
   text-transform: uppercase;
   padding: 5px; }
 
-.hero {
+h2 {
+  color: blue;
+  margin-bottom: 50px; }
+
+section {
+  text-align: center; }
+
+#hero {
   background-image: url("../img/desk.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 350px;
-  top: 51px; }
+  background-size: cover; }
 
-.features {
-  height: 500px;
-  background-color: #b9c4b7; }
+#about {
+  background-color: pink;
+  height: 200px; }
 
-.footer {
+#projects {
+  background-color: moccasin;
+  height: 200px; }
+
+#skills {
+  height: 200px;
+  background-color: #b9c4b7;
+  padding: 50px 15px;
+  text-align: center; }
+  #skills ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px; }
+  #skills li {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    color: blue;
+    background: #abb9a9;
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em; }
+
+#contact {
+  height: 200px;
+  background-color: #9ead9b; }
+
+footer {
   color: white;
-  opacity: 0.3;
-  background-color: #292537; }
+  background-color: black; }
 
 .triangle {
   width: 0;

@@ -2,56 +2,114 @@
 @import 'objects';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: verdana;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana;
 }
 
+body {
+  &.in-transition {
+    transition: transform 10s ease;
+  }
+}
 
 // === header === //
 
 header {
-    height: 50px;
-    width: 100%;
-    background-color: rgb(41, 37, 55);
-    position: fixed;
-    opacity: .8;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(41, 37, 55);
+  position: fixed;
+  opacity: .8;
 }
 
 header > ul{
-    padding-top: 5px;
+  padding-top: 5px;
 }
 
 header > ul > li {
-    color: white;
-    display: inline;
-    text-transform: uppercase;
-    padding: 5px;
+  color: white;
+  display: inline;
+  text-transform: uppercase;
+  padding: 5px;
 }
 
-// === hero section  === //
-
-.hero {
-    background-image: url("../img/desk.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 350px;
-    top: 51px;
+h2 {
+  color: $heading;
+  margin-bottom: 50px;
 }
 
-// === features section  === //
-
-.features {
-    height: 500px;
-    background-color: rgb(185, 196, 183);
+section {
+  text-align: center;
 }
+
+
+// === Hero section  === //
+
+#hero {
+  background-image: url("../img/desk.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+// === About section  === //
+
+#about {
+  background-color: pink;
+  height: 200px;
+}
+
+
+// === Projects section  === //
+
+#projects {
+  background-color: moccasin;
+  height: 200px;
+}
+
+
+// === Skills section  === //
+
+#skills {
+  height: 200px;
+  background-color: rgb(185, 196, 183);
+  padding: 50px 15px;
+  text-align: center;
+
+  ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+  }
+
+  li {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    color: $heading;
+    background: darken($background-alt, 5%);
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em;
+  }
+}
+
+
+// === Contact section  === //
+
+#contact {
+  height: 200px;
+  background-color: darken($background-alt, 10%);
+}
+
 
 // === footer  === //
 
-.footer {
-    color: white;
-    opacity: 0.3;
-    background-color: rgb(41, 37, 55);
+footer {
+  color: white;
+  background-color: darken($background-alt, 90%);
 }

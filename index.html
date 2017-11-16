@@ -10,36 +10,52 @@
 
         <header>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#projects">Projects</a></li>
+                <li><a class="scroll" href="#skills">Skills</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
+
+                <!-- <li><a id="scrollButton" class="scroll" href="#target">Click me</a></li> -->
             </ul>
         </header>
 
-        <section class="hero">
+        <section id="hero">
+          <div class="triangle point-left" id="triangle-slow"></div>
+          <div class="triangle point-right" id="triangle-fast"></div>
+        </section>
+
+        <section id="about">
+          <h2>About me</h2>
           <p>Hi, ich bin Rebecca<br>Web Developer<br>aus Berlin</p>
-          <div class="triangle point-left"></div>
-          <div class="triangle point-right"></div>
+          <div class="triangle point-left" id="triangle-slow"></div>
+          <div class="triangle point-right" id="triangle-fast"></div>
         </section>
 
-        <section class="projects">
-
-        </section>
-        <section class="skills">
-
+        <section id="projects">
+          <h2>Projects</h2>
         </section>
 
-        <section class="contact">
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Node.js</li>
+          </ul>
+        </section>
+
+        <section id="contact">
           <h2>Get in Touch</h2>
           <a href="#">Github</a>
           <a href="#">LinkedIn</a>
           <a href="#">Xing</a>
         </section>
 
-        <section class="footer">
+        <footer>
           <p>&copy; 2017 Rebecca Krummel &hearts;</p>
-        </section>
+        </footer>
+
+        <script src="script.js" charset="utf-8"></script>
     </body>
 </html>
