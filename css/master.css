@@ -1,3 +1,16 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid; }
+  .triangle.point-left {
+    border-width: 118px 200px 100px 0;
+    border-color: transparent #ff0055 transparent transparent; }
+  .triangle.point-right {
+    border-width: 100px 0 118px 200px;
+    border-color: transparent transparent transparent #4400ff;
+    position: absolute;
+    top: 176px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +41,15 @@ header > ul > li {
   height: 350px;
   top: 51px; }
 
+.features {
+  height: 500px;
+  background-color: #b9c4b7; }
+
+.footer {
+  color: white;
+  opacity: 0.3;
+  background-color: #292537; }
+
 .triangle {
   width: 0;
   height: 0;
@@ -41,13 +63,3 @@ header > ul > li {
     position: absolute;
     top: 176px; }
 
-.features {
-  height: 500px;
-  background-color: #b9c4b7; }
-
-.footer {
-  color: white;
-  opacity: 0.3;
-  background-color: #292537; }
-
-/*# sourceMappingURL=master.css.map */

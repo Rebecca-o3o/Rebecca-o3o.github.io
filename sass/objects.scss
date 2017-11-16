@@ -1,0 +1,17 @@
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+  &.point-left {
+    border-width: 118px 200px 100px 0;
+    border-color: transparent #ff0055 transparent transparent;
+  }
+  &.point-right {
+    border-width: 100px 0 118px 200px;
+    border-color: transparent transparent transparent #4400ff;
+    position: absolute;
+    top: 176px;
+  }
+}
