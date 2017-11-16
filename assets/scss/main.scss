@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+// === header === //
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(41, 37, 55);
+    position: fixed;
+    opacity: .8;
+}
+
+header > ul{
+    padding-top: 5px;
+}
+
+header > ul > li {
+    color: white;
+    display: inline;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+// === hero section  === //
+
+.hero {
+    background-image: url("../img/desk.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    top: 51px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+  &.point-left {
+    border-width: 118px 200px 100px 0;
+    border-color: transparent #ff0055 transparent transparent;
+  }
+  &.point-right {
+    border-width: 100px 0 118px 200px;
+    border-color: transparent transparent transparent #4400ff;
+    position: absolute;
+    top: 176px;
+  }
+}
+
+// === features section  === //
+
+.features {
+    height: 500px;
+    background-color: rgb(185, 196, 183);
+}
+
+// === footer  === //
+
+.footer {
+    color: white;
+    opacity: 0.3;
+    background-color: rgb(41, 37, 55);
+}
