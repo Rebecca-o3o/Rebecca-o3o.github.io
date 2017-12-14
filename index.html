@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- FAVICON -->
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -22,37 +23,71 @@
         <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+        <!-- CUSTOM FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+        <!--use just the brands and solid styles-->
+        <script src="https://use.fontawesome.com/releases/v5.0.1/js/brands.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.1/js/solid.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.1/js/regular.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.1/js/fontawesome.js"></script>
+
+
         <link rel="stylesheet" href="css/master.css">
         <title>Rebecca Krummel</title>
     </head>
     <body>
 
         <header>
-            <ul>
-                <li><a class="scroll" href="#about">About</a></li>
-                <li><a class="scroll" href="#projects">Projects</a></li>
-                <li><a class="scroll" href="#skills">Skills</a></li>
-                <li><a class="scroll" href="#contact">Contact</a></li>
-
-                <!-- <li><a id="scrollButton" class="scroll" href="#target">Click me</a></li> -->
-            </ul>
+          <ul>
+              <li><a class="scroll" href="#about">About</a></li>
+              <li><a class="scroll" href="#projects">Projects</a></li>
+              <li><a class="scroll" href="#skills">Skills</a></li>
+              <li><a class="scroll" href="#contact">Contact</a></li>
+          </ul>
         </header>
 
-        <section id="hero">
-          <div class="triangle point-left" id="triangle-slow"></div>
-          <div class="triangle point-right" id="triangle-fast"></div>
-        </section>
+        <div class="triangle" id="point-left"></div>
+        <div class="triangle" id="point-right"></div>
+        <div class="triangle" id="point-left-small"></div>
+
+        <div id="hero"></div>
+        <p id="hero-text">
+          Hi!<br>Ich bin Rebecca,<br>a full stack web developer from Berlin.
+        </p>
 
         <section id="about">
           <h2>About me</h2>
-          <p>Hi, ich bin Rebecca<br>Web Developer<br>aus Berlin</p>
+          <p>I'm a JavaScript Developer and Event Ticketing Professional.</p>
+          <p>I worked in Operations and Consulting for different Ticketing Suppliers and on projects like <i>FIFA Women's World Cup Germany 2011™</i> and the <i>XXII Olympic Winter Games</i> 2014 in Sochi, Russia.</p>
         </section>
 
         <section id="projects">
           <h2>Projects</h2>
+          <div class="projects-wrapper">
+            <div class="project-box">
+              <p class="project-desc"><i>Ticketstubs Wall</i> was the final project at SPICED Academy</p>
+              <a href="https://github.com/Rebecca-o3o/ticketstubs-wall">
+                <img src="img/screenshot-wall.jpg" alt="Ticketstubs Wall">
+              </a>
+            </div>
+            <div class="project-box">
+              <p class="project-desc"><i>Image Board</i> build during my stay at SPICED Academy</p>
+              <a href="https://github.com/Rebecca-o3o/imageboard">
+                <img src="img/screenshot-image-board.png" alt="Image Board">
+              </a>
+            </div>
+            <div class="project-box">
+              <p class="project-desc"><i>Petition</i> was the first project at SPICED Academy</p>
+              <a href="https://github.com/Rebecca-o3o/petition">
+                <img src="img/screenshot-petition.png" alt="Petition">
+              </a>
+            </div>
+          </div>
         </section>
 
         <section id="skills">
+          <div class="triangle" id="point-right-small"></div>
           <h2>Skills</h2>
           <ul>
             <li>JavaScript</li>
@@ -70,16 +105,23 @@
 
         <section id="contact">
           <h2>Get in Touch</h2>
-          <p>
-            <a href="#">Github</a> |
-            <a href="#">LinkedIn</a> |
-            <a href="#">Xing</a>
 
-          </p>
+            <a href="https://github.com/Rebecca-o3o/">
+              <i class="fab fa-github-square fa-3x"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/rebecca-krummel">
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+
+            <a href="https://www.xing.com/profile/Rebecca_Krummel">
+              <i class="fab fa-xing-square fa-3x"></i>
+            </a>
+
         </section>
 
         <footer>
-          <p>&copy; 2017 Rebecca Krummel &hearts;</p>
+          <p>&copy; 2017 Rebecca Krummel ▼</p>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

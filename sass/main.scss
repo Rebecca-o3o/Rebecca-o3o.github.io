@@ -4,46 +4,66 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: verdana;
 }
 
 body {
-  &.in-transition {
-    transition: transform 10s ease;
+  background-color: $secondary-color;
+}
+
+// === header & footer === //
+
+header, footer {
+  height: 50px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  background-color: $primary-color;
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 100;
+  ul {
+    li {
+      padding: 0px 5px;
+      color: $primary-color;
+      display: inline;
+      text-transform: uppercase;
+    }
+    a:hover {
+      color: $third-color;
+    }
   }
 }
 
-// === header === //
-
-header {
-  height: 50px;
-  width: 100%;
-  background-color: rgb(41, 37, 55);
-  position: fixed;
-  opacity: .8;
+footer {
+  color: $primary-color;
+  font-size: x-small;
 }
 
-header > ul{
-  padding-top: 5px;
-}
-
-header > ul > li {
-  color: white;
-  display: inline;
-  text-transform: uppercase;
-  padding: 5px;
-}
-
-h2 {
-  color: $heading;
-  margin-bottom: 50px;
-}
+// === sections === //
 
 section {
   text-align: center;
+  padding: 15px 0;
+  margin: 0px 30px;
+  position: relative;
+  z-index: 60;
 }
 
+h2 {
+  font-family: 'Dancing Script', cursive;
+  color: $primary-color;
+  font-size: 2em;
+  padding-bottom: 5px;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+}
 
 // === Hero section  === //
 
@@ -51,32 +71,92 @@ section {
   background-image: url("../img/desk.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  position: relative;
 }
 
+#hero, #hero-text {
+  height: calc(100vh - 200px);
+}
+
+#hero::before {
+  content: '';
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+}
+
+#hero-text {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero-text:first-child {
+  font-size: 2.5em;
+}
+#hero-text::first-line {
+  font-size: 2.5em;
+}
 
 // === About section  === //
-
 #about {
-  background-color: pink;
-  height: 200px;
+  position: relative;
+  z-index: 60;
 }
-
 
 // === Projects section  === //
 
 #projects {
-  background-color: moccasin;
-  height: 200px;
+  background-color: lighten($background, 50%);
+  display: flex;
+  flex-direction: column;
+  .project-desc {
+    padding-top: 10px;
+  }
+  p {
+    font-size: small;
+  }
+  img {
+    width: 250px;
+    height: 160px;
+    border-radius: 3px;
+    margin: 10px 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    transition: all .2s ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
 }
 
+@media (min-width: 860px) {
+  .projects-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .project-box {
+      flex: 1;
+    }
+  }
+}
 
 // === Skills section  === //
 
 #skills {
-  height: 200px;
-  background-color: rgb(185, 196, 183);
-  padding: 50px 15px;
   text-align: center;
 
   ul {
@@ -90,10 +170,9 @@ section {
     display: inline-block;
     margin: 7px;
     padding: 5px 10px;
-    color: $heading;
-    background: darken($background-alt, 5%);
+    color: $primary-color;
+    background: lighten($background, 50%);
     list-style: none;
-    cursor: default;
     font-size: 1.2em;
   }
 }
@@ -102,14 +181,13 @@ section {
 // === Contact section  === //
 
 #contact {
-  height: 200px;
-  background-color: darken($background-alt, 10%);
-}
-
-
-// === footer  === //
-
-footer {
-  color: white;
-  background-color: darken($background-alt, 90%);
+  // height: 200px;
+  background-color: $background;
+  a {
+    color: $primary-color;
+    padding: 0 10px;
+  }
+  a:hover {
+    color: $third-color;
+  }
 }
