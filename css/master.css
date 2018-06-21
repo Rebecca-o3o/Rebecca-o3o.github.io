@@ -47,6 +47,7 @@ header {
   background-color: #313435;
   position: fixed;
   width: -webkit-fill-available;
+  width: -moz-available;
   z-index: 100; }
   header ul li {
     padding: 0px 5px;
@@ -202,4 +203,3 @@ a {
   border-color: transparent transparent transparent #647C86;
   z-index: -1;
   right: 20vw; }
-
