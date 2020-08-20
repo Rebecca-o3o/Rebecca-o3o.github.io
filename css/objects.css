@@ -1,0 +1,30 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  z-index: 50; }
+
+#point-left {
+  border-width: 118px 200px 100px 0;
+  border-color: transparent #ff0055 transparent transparent;
+  top: 80vh;
+  right: 0px; }
+
+#point-right {
+  border-width: 100px 0 118px 200px;
+  border-color: transparent transparent transparent #4400ff;
+  top: 15vh; }
+
+#point-left-small {
+  border-width: 59px 100px 50px 0;
+  top: 82vh;
+  left: 15vw;
+  border-color: transparent #84B7A2 transparent transparent;
+  z-index: -1; }
+
+#point-right-small {
+  border-width: 50px 0 59px 100px;
+  border-color: transparent transparent transparent #647C86;
+  z-index: -1;
+  right: 20vw; }
